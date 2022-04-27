@@ -17,6 +17,36 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="shortcut icon" type="image/png" href="picture/logo.jpeg" />
+    <!-- Global site tag (gtag.js) - Google Ads: 10886486965 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10886486965"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-10886486965");
+    </script>
+    <!-- Event snippet for tel arama conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-10886486965/hjOlCOW79rcDELW3isco",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -31,7 +61,13 @@
             <li><a href="#bolum2">Fotoğraflar</a></li>
             <li><a href="#bolum3">Yorumlar</a></li>
             <li><a href="#bolum4">Haritalar</a></li>
-            <li><a href="tel:+905050366080">İletişim</a></li>
+            <li>
+              <a
+                onclick=" return gtag_report_conversion('tel:+905050366080');"
+                href="tel:+905050366080"
+                >İletişim</a
+              >
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()" id="kapat"></i>
@@ -39,7 +75,12 @@
       <div class="text-box">
         <h1>Denizli Çilingir Serçe</h1>
         <p>Denizli'de 7/24 güvenilir çilingir servisi</p>
-        <a href="tel:+905050366080" class="hero-btn">Çilingir Çağır</a>
+        <a
+          onclick="return gtag_report_conversion('tel:+905050366080');"
+          href="tel:+905050366080"
+          class="hero-btn"
+          >Çilingir Çağır</a
+        >
       </div>
     </section>
     <section id="bolum1" class="course">
@@ -70,7 +111,10 @@
           <p>
             Arayın hemen gelelim. İşinizin hızlı yapılması size en yakın ve 7/24
             çalışan anahtarcı ile olacaktır. <br />
-            <a style="color: aquamarine" href="tel:+905050366080"
+            <a
+              onclick="return gtag_report_conversion('tel:+905050366080');"
+              style="color: aquamarine"
+              href="tel:+905050366080"
               >En yakın çilingirciyi aramak için tıklayın</a
             >
           </p>
@@ -156,12 +200,19 @@
         <i class="fa fa-facebook"></i>
         <i class="fa fa-twitter"></i>
         <i class="fa fa-instagram"></i>
-        <a href="tel:+905050366080"><i class="fa fa-phone"></i></a>
+        <a
+          onclick="return gtag_report_conversion('tel:+905050366080');"
+          href="tel:+905050366080"
+          ><i class="fa fa-phone"></i
+        ></a>
       </div>
       <p>Made with<i class="fa fa-heart-o"></i> by Atakan Serçe</p>
     </section>
 
-    <a href="tel:+905050366080" class="material-icons floating-btn"
+    <a
+      onclick="return gtag_report_conversion('tel:+905050366080');"
+      href="tel:+905050366080"
+      class="material-icons floating-btn"
       ><img src="picture/call.png" alt=""
     /></a>
 
