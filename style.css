@@ -89,6 +89,9 @@ nav .fa {
 }
 
 @media (max-width: 700px) {
+  .hero-btn {
+    background: #d5fa18;
+  }
   .text-box h1 {
     font-size: 20px;
   }
