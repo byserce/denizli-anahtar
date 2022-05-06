@@ -47,6 +47,26 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         return false;
       }
     </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 10886486965 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10886486965"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-10886486965");
+    </script>
+    <!-- Event snippet for Diğer conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-10886486965/TvX4CMmv1rYDELW3isco",
+      });
+    </script>
   </head>
   <body>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
