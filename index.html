@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denizli Çilingir Numaraları - Türkiye Çilingirleri</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function callNumber(number) {
+      window.location.href = "tel:" + number;
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -12,7 +17,7 @@
       <img src="logo.png" alt="Türkiye Çilingir Logo">
       <h1>Türkiye Çilingirleri</h1>
     </div>
-    <button class="call-button" href="tel:+905050366080">Çilingir İlanı Ver</button>
+    <button class="call-button" onclick="callNumber('+905050366080')">Çilingir İlanı Ver</button>
   </header>
   
   <main>
@@ -29,31 +34,31 @@
     <section class="shop-section">
       <div class="shop">
         <h3>Pamukkale Çilingir</h3>
-        <button class="search-button" href="tel:+905050366080">Hemen ara<br>+90 505 036 60 80</button>
+        <button class="search-button" onclick="callNumber('+905050366080')">Hemen ara<br>+90 505 036 60 80</button>
       </div>
     </section>
     <section class="shop-section">
       <div class="shop">
         <h3>Merkezefendi Çilingir</h3>
-        <button class="search-button" href="tel:+905057330144">Hemen Ara<br>+90 505 733 01 44</button>
+        <button class="search-button" onclick="callNumber('+905057330144')">Hemen Ara<br>+90 505 733 01 44</button>
       </div>
     </section>
     <section class="shop-section">
       <div class="shop">
         <h3>Kampüs Çilingir</h3>
-        <button class="search-button" href="tel:+905525405940">Hemen Ara<br>+90 552 540 59 40</button>
+        <button class="search-button" onclick="callNumber('+905525405940')">Hemen Ara<br>+90 552 540 59 40</button>
       </div>
     </section>
     <section class="shop-section">
       <div class="shop">
         <h3>Bağbaşı Çilingir</h3>
-        <button class="search-button" href="tel:+905538788428">Hemen Ara<br>+90 553 878 84 28</button>
+        <button class="search-button" onclick="callNumber('+905538788428')">Hemen Ara<br>+90 553 878 84 28</button>
       </div>
     </section>
     <section class="shop-section">
       <div class="shop">
         <h3>Karahasanlı Çilingir</h3>
-        <button class="search-button" href="tel:+905510198633">Hemen Ara<br>+90 551 019 86 33</button>
+        <button class="search-button" onclick="callNumber('+905510198633')">Hemen Ara<br>+90 551 019 86 33</button>
       </div>
     </section>
   </main>
