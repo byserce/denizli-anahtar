@@ -248,7 +248,7 @@ main {
   margin-bottom: 10px;
 }
 
-#district-list ul li h6 {
+#district-list ul li h6 a {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
