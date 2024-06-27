@@ -3,15 +3,15 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fffbea; /* Sarımsı arka plan */
   color: #333;
   line-height: 1.6;
 }
 
 /* Başlık stilleri */
 .header-orta {
-  background: linear-gradient(to right, #005a0e, #097227);
-  color: white;
+  background: linear-gradient(to right, #f0c808, #ffc300); /* Sarı degrade */
+  color: black; /* Sarı arka planda okunabilirlik için siyah yazı rengi */
   text-align: center;
   padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,14 +20,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px; /* Logo ve başlık arasındaki boşluk */
-  z-index: 0; /* Header için yüksek z-index değeri */
+  gap: 0px;
+  z-index: 0;
 }
 
 .header-orta img.logo {
-  width: 50px; /* Logo genişliği */
+  width: 50px;
   margin-left: 25px;
-  height: auto; /* Oranlı yükseklik */
+  height: auto;
   animation: fadeIn 1s ease-out;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-list a {
-  color: white;
+  color: black; /* Sarı arka planda okunabilirlik için siyah yazı rengi */
   text-decoration: none;
   font-size: 16px;
 }
@@ -84,7 +84,7 @@ body {
 .menu-toggle .hamburger {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: black; /* Sarı arka planda okunabilirlik için siyah */
   border-radius: 5px;
   position: relative;
   transition: all 0.3s;
@@ -95,7 +95,7 @@ body {
   content: '';
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: black; /* Sarı arka planda okunabilirlik için siyah */
   border-radius: 5px;
   position: absolute;
   transition: all 0.3s;
@@ -130,13 +130,13 @@ body {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #097227;
+    background-color: #ffc300; /* Sarı arka plan */
     flex-direction: column;
     width: 100%;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
-    z-index: 999; /* Nav listesi için yüksek z-index değeri */
+    z-index: 999;
   }
 
   .nav-list.active {
@@ -146,7 +146,7 @@ body {
   .nav-list li {
     text-align: center;
     padding: 15px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black; /* Siyah sınır */
   }
 
   .nav-list li:last-child {
@@ -160,8 +160,6 @@ body {
   .header-orta {
     justify-content: space-between;
   }
-
-
 }
 
 /* Animasyonlar */
@@ -201,7 +199,7 @@ main {
 }
 
 .title-section h2 {
-  color: #005a0e;
+  color: #f0c808; /* Sarı renk */
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -218,8 +216,8 @@ main {
 .shop .search-button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #097227;
-  color: white;
+  background-color: #ffc300; /* Sarı buton */
+  color: black; /* Sarı butonda okunabilirlik için siyah yazı rengi */
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -232,7 +230,7 @@ main {
 
 .title-section .search-button:hover,
 .shop .search-button:hover {
-  background-color: #555;
+  background-color: #e6b800; /* Daha koyu sarı */
   transform: translateY(-2px);
 }
 
@@ -309,7 +307,7 @@ main {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #005a0e;
+  color: #f0c808; /* Sarı renk */
   margin-bottom: 20px;
 }
 
@@ -324,7 +322,7 @@ main {
 
 .customer-card strong {
   font-weight: bold;
-  color: #005a0e;
+  color: #f0c808; /* Sarı renk */
 }
 
 /* Hizmetler ve referanslar bölümü stilleri */
@@ -340,7 +338,7 @@ main {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: #005a0e;
+  color: #f0c808; /* Sarı renk */
   margin-bottom: 20px;
 }
 
@@ -372,8 +370,8 @@ main {
 /* Hizmet Verdiğimiz Bölgelerimiz bölümü */
 #serving-areas {
   padding: 30px;
-  background-color: #005a0e;
-  color: white;
+  background-color: #f0c808; /* Sarı renk */
+  color: black; /* Sarı arka planda okunabilirlik için siyah yazı rengi */
   border-radius: 15px;
   margin-bottom: 40px;
 }
@@ -401,7 +399,7 @@ main {
 
 /* Link stilleri */
 a {
-  color: #005a0e;
+  color: #f0c808; /* Sarı renk */
   text-decoration: none;
 }
 
@@ -415,12 +413,12 @@ a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #097227;
+  background-color: #ffc300; /* Sarı renk */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-  color: white;
+  color: black; /* Sarı arka planda okunabilirlik için siyah yazı rengi */
   text-decoration: none;
   display: none;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -434,7 +432,7 @@ a:hover {
 
 .gallery {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #fffbea; /* Sarımsı arka plan */
 }
 
 .gallery-container {
