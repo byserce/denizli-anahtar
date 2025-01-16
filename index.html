@@ -29,6 +29,26 @@
 </script>
 
   <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16537682025"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16537682025'); </script>
+ 
+ <!-- Event snippet for tel. conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16537682025/G6iwCMrz7YoaEOmA5M09',
+        'value': 1.0,
+        'currency': 'TRY',
+        'transaction_id': '',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
   <!-- Meta etiketleri -->
   <meta charset="UTF-8">
   <meta name="description" content="Denizli Çilingir Anahtarcı hizmeti için 0553 878 84 28 numaramızı 7/24 acil çilingir için arayabilir Denizli 'nin her noktasına 15 dakikada kapınızdayız.">
